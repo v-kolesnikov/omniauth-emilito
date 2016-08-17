@@ -1,6 +1,7 @@
 # Omniauth Emilito
 
-Omniauth OAuth2 strategy for [Emilito](https://github.com/v-kolesnikov/emilito)
+Omniauth(https://github.com/omniauth/omniauth) [OAuth2](https://github.com/intridea/omniauth-oauth2) strategy for [Emilito](https://github.com/v-kolesnikov/emilito)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# config/initializers/omniauth.rb
+
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :emilito,
+           ENV['EMILITO_APP_CLIENT_ID'],
+           ENV['EMILITO_APP_CLIENT_SECRET'],
+           client_options: {
+             site: ENV['EMILITO_WEB_URL']
+           }
+end
+```
 
 ## Development
 

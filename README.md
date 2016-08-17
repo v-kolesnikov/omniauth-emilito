@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.org/v-kolesnikov/omniauth-emilito.svg?branch=master)](https://travis-ci.org/v-kolesnikov/omniauth-emilito)
+
 # Omniauth Emilito
 
-Omniauth(https://github.com/omniauth/omniauth) [OAuth2](https://github.com/intridea/omniauth-oauth2) strategy for [Emilito](https://github.com/v-kolesnikov/emilito)
+[Omniauth](https://github.com/omniauth/omniauth) [OAuth2](https://github.com/intridea/omniauth-oauth2) strategy for [Emilito](https://github.com/v-kolesnikov/emilito)
 
 ## Installation
 
